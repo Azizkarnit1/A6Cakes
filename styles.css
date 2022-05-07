@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Apple Chancery, cursive;
+}
+    /* =============
+    header 
+    =================*/
+header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    background-color: hotpink;
+    z-index: 99;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+#a6{
+    font-size: 300%;
+    position: relative;
+    top: 0;
+    text-align: center;
+    color: pink;
+    text-shadow: 3px 0 2px #000, -2px 0 0 #fff, 0 2px 0 #000, -2px -3px 0 #fff, 1px 2px #000, -1px -1px 0 #fff, 3px 5px 0 #000, -1px 1px 0 #fff;
+    font-weight: 800;
+    font-size: 450%;
+}
+.bg-img{
+    position: relative;
+    top: 80px;
+    width: 100%;
+    height: 600px;
+    background-image: url("singup\ bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* =============
+     main container of the form
+    =================*/
+.sign-up{
+    position: relative;
+    font-size: 250%;
+    font-weight: 600;
+    color: palevioletred;
+    text-align: center;
+    padding: 0 0 10px 0;
+    text-shadow: 5px 4px 1px black;
+    z-index: 20;
+}
+@media screen and (min-width:991px) and (max-width:5000px) {
+
+    /* =============
+    form 
+    =================*/
+    .form{
+        position: relative;
+        width: 30%;
+        height: 70%;
+        left: 35%;
+        top: 15%;
+        background-color: rgb(0,0,0,0.6);
+    }
+    .form img{
+        position: relative;
+        width: 40%;
+        left: 30%;
+    }
+    .text{    
+        color: white;
+        text-align: center;
+    }
+    /* labels */
+    .name,.username,.password,.email{
+        display: flex;
+        position: relative;
+    }
+    .name label,.username label,.password label,.email label{
+        position: relative;
+        left: 8%;
+        color: white;
+        font-size: 112.5%;
+        margin: 10px 0 5px 0;
+    }
+    /* inputs */
+    .username input,.password input,.email input,.name input{
+        position: absolute;
+        border-radius: 6px;
+        border: 2px gray solid;
+        height: 20px;
+        padding: 0 2px 0 2px;
+        width: 35%;
+        right: 30%;
+        margin-top: 10px;
+    }
+    .username input:focus,.password input:focus,.email input:focus,.name input:focus{
+        border: 2px hotpink solid;
+        outline: none;
+    }
+    /* bottun */
+    button{
+        width: 50%;
+        height: 1.6rem;
+        margin-top: 10px;
+        border: none;
+        background-color: hotpink;
+        border-radius: 6px;
+        font-size: 18px;
+        color: white;
+        position: relative;
+        left: 25%;
+    }
+    button:focus, button:hover{
+        background-color: rgb(187, 75, 131);
+    }
+    .p{
+        width: 60%;
+        text-align: center;
+        font-size: 12px;
+        position: relative;
+        left: 20%;
+        padding-top: 10px;
+        color: rgb(131, 131, 131);
+    }
+    .p a{
+        text-decoration: none;
+        color: rgb(165, 42, 132);
+    }
+    .p a:hover{
+        text-decoration: underline;
+        color: rgb(217, 62, 175);
+    }
+    /* =============
+    footer 
+    =================*/
+    footer{
+        width: 100%;
+        height: 180px;
+        background-color: rgb(111, 37, 105);
+        position: relative;                                                             
+        top: 80px;
+        margin-top: 30px;
+    }
+    footer img{
+        width: 10%;
+        position: relative;
+        left: 46%;
+        top: 10px;
+    }
+    footer b{
+        font-weight: 800;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 20px;
+    }
+    footer a{
+        text-decoration: none;
+        color:rgb(165, 42, 132);
+    }
+    footer a:hover{
+        text-decoration: underline;
+        color:rgb(217, 62, 175);
+    }
+    hr{
+        position: relative;
+        top: 20px;
+    }
+    .copy{
+        font-weight: 400;
+        margin: 30px;
+    }
+}
+@media screen and (max-width:990px) {
+    /* =============
+    main container of the form
+    =================*/
+    .bg-img{
+        top: 100px;
+        height: 2000px;
+    }
+    /* =============
+    form 
+    =================*/
+    .form{
+        position: relative;
+        width: 60%;
+        height: 1500px;
+        top: 250px;
+        left: 20%;
+        background-color: rgb(0,0,0,0.6);
+    }
+    .form img{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        top: 10px;
+        display: block;
+    }
+    .sign-up{
+        font-size: 400%;
+        font-weight: 600;
+        padding: 20px;
+    }
+
+    .text{
+        font-size: 200%;
+        color: white;
+        text-align: center;
+        margin: 0 5px 0 5px;
+    }
+    /* labels */
+    .name,.username,.password,.email{
+        display: grid;
+        position: relative;
+        font-size: 180%;
+        padding: 20px;
+    }
+    .name label,.username label,.password label,.email label{
+        color: white;
+        font-size: 180%;
+        padding-bottom: 5px;
+    }
+    .name input,.username input,.password input,.email input{
+        height: 150%;
+        width: 100%;
+        font-size: 40px;
+        border-radius: 6px;
+        border: 2px gray solid;
+        padding: 0 2px 0 2px;
+        margin-top: 10px;
+    }
+    .username input:focus,.password input:focus,.email input:focus,.name input:focus{
+        border: 2px hotpink solid;
+        outline: none;
+    }
+    /* bottun */
+    button{
+        width: 80%;
+        height: 150px;
+        margin: 50px 0 20px 0;
+        border: none;
+        background-color: hotpink;
+        border-radius: 6px;
+        font-size: 300%;
+        color: white;
+        position: relative;
+        left: 10%;
+    }
+    button:focus, button:hover{
+        background-color: rgb(187, 75, 131);
+    }
+    .p{
+        width: 80%;
+        text-align: center;
+        font-size: 200%;
+        position: relative;
+        left: 10%;
+        top: 20px;
+        color: rgb(131, 131, 131);
+    }
+    .p a{
+        text-decoration: none;
+        color: rgb(165, 42, 132);
+    }
+    .p a:hover,.p a:focus{
+        text-decoration: underline;
+        color: rgb(217, 62, 175);
+    }
+    /* =============
+    footer 
+    =================*/
+    footer{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(111, 37, 105);
+        position: relative;                                                             
+        top: 80px;
+        margin-top: 30px;
+    }
+    footer img{
+        width: 20%;
+        position: relative;
+        left: 40%;
+        top: 10px;
+    }
+    footer b{
+        font-weight: 800;
+    }
+    footer p{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 3rem;
+    }
+    footer a{
+        text-decoration: none;
+        color:rgb(165, 42, 132);
+    }
+    footer a:focus{
+        text-decoration: underline;
+        color:rgb(217, 62, 175);
+    }
+    hr{
+        position: relative;
+        top: 20px;
+    }
+    .copy{
+        font-weight: 400;
+        position: relative;
+        top: 20px;
+        font-size: 2rem;
+    }
+}
